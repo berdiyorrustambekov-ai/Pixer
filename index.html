@@ -1,369 +1,98 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BizPro - Biznes uchun raqamli yechimlar</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akademnashr</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header animate-fade-in-up">
-        <div class="container">
-            <div class="logo animate-scale-in">
-                <img src="assets/images/logo.svg" alt="BizPro Logo">
-            </div>
-            <nav class="nav animate-fade-in-right delay-1">
-                <ul>
-                    <li><a href="#hero">Bosh sahifa</a></li>
-                    <li><a href="#services">Xizmatlar</a></li>
-                    <li><a href="#how-we-work">Qanday ishlaymiz</a></li>
-                    <li><a href="#contact">Aloqa</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle animate-scale-in delay-2">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content animate-fade-in-left">
-                <h1>Biznesingiz uchun raqamli yechimlar</h1>
-                <p>Web-saytlar, botlar, CRM tizimlari va analitika - barcha raqamli yechimlar bir joyda</p>
-                <div class="hero-buttons animate-fade-in-up delay-1">
-                    
-                    <a href="#contact" class="btn btn-primary">Buyurtma berish</a>
-                    <a href="#services" class="btn btn-secondary">Xizmatlarimiz</a>
-                </div>
-            </div>
-            <div class="hero-video-wrapper animate-fade-in-right delay-1">
-                <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-video.svg">
-                    <source src="assets/videos/7578552-uhd_3840_2160_30fps.mp4" type="video/mp4">
-                    Sizning brauzeringiz video formatini qo'llab-quvvatlamaydi.
-                </video>
-            </div>
-        </div>
-    </section>
+<div class="container">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">📚 Akademnashr</div>
+    <nav>
+      <a href="#home">Bosh sahifa</a>
+      <a href="#books">Kitoblar</a>
+      <a href="#sale">Aksiyalar</a>
+      <a href="#contact">Kontaktlar</a>
+    </nav>
+    <button class="btn">Ro'yhatdan o'tish</button>
+  </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header animate-fade-in-up">
-                <h2>Xizmatlarimiz</h2>
-                <p class="animate-fade-in-up delay-1">Biznesingizni rivojlantirish uchun to'liq raqamli yechimlar</p>
-                <div class="section-divider animate-scale-in delay-2"></div>
-            </div>
-            <div class="services-grid">
-                <div class="service-card animate-bounce-in">
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon-bg"></div>
-                        <div class="service-icon">
-                            <img src="assets/images/service-web.svg" alt="Web-saytlar">
-                        </div>
-                    </div>
-                    <div class="service-content">
-                        <h3>Web-saytlar</h3>
-                        <p>Zamonaviy, responsive va tez ishlaydigan web-saytlar yaratamiz. Sizning brendingizga mos dizayn va maksimal foydalanish qulayligi.</p>
-                        <ul class="service-features">
-                            <li>Responsive dizayn</li>
-                            <li>SEO optimallashtirish</li>
-                            <li>Tez yuklanish</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card animate-bounce-in delay-1">
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon-bg"></div>
-                        <div class="service-icon">
-                            <img src="assets/images/service-bot.svg" alt="Telegram botlar">
-                        </div>
-                    </div>
-                    <div class="service-content">
-                        <h3>Telegram botlar</h3>
-                        <p>Avtomatlashtirish va mijozlar bilan aloqani yaxshilash uchun smart botlar. 24/7 mijozlar xizmat ko'rsatish.</p>
-                        <ul class="service-features">
-                            <li>Avtomat javoblar</li>
-                            <li>Buyurtma qabul qilish</li>
-                            <li>Ma'lumot yig'ish</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card animate-bounce-in delay-2">
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon-bg"></div>
-                        <div class="service-icon">
-                            <img src="assets/images/service-crm.svg" alt="CRM tizimlari">
-                        </div>
-                    </div>
-                    <div class="service-content">
-                        <h3>CRM tizimlari</h3>
-                        <p>Mijozlar bilan ishlashni boshqarish uchun samarali tizimlar. Barcha mijoz ma'lumotlari bir joyda.</p>
-                        <ul class="service-features">
-                            <li>Mijoz bazasi</li>
-                            <li>Analitika</li>
-                            <li>Avtomatlashtirish</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="service-card animate-bounce-in delay-3">
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon-bg"></div>
-                        <div class="service-icon">
-                            <img src="assets/images/service-analytics.svg" alt="Analitika">
-                        </div>
-                    </div>
-                    <div class="service-content">
-                        <h3>Analitika</h3>
-                        <p>Ma'lumotlarni tahlil qilish va biznes qarorlarini qabul qilish. Raqamlar orqali muvaffaqiyatni o'lchash.</p>
-                        <ul class="service-features">
-                            <li>Google Analytics</li>
-                            <li>Hisobotlar</li>
-                            <li>Strategiya</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="services-cta animate-fade-in-up delay-4">
-                <p>Barcha xizmatlarimiz <strong>bepul konsultatsiya</strong> bilan birga!</p>
-                <a href="#contact" class="btn btn-primary btn-large">Bepul maslahat olish</a>
-            </div>
-        </div>
-    </section>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="line"></div>
+      <h1>Pythonda dasturlash asoslari</h1>
+      <p>Dasturlash asoslariga oid o'zbek tilidagi ilk eng mukammal qo'llanma. Kitobning har bir bo'limi uchun maxsus video darslar yozilgan bo'lib, ularga kitobda ko'rsatilgan QR kod orqali o'tish mumkin.</p>
+      <button class="btn">Buyurtma berish</button>
+    </div>
+    <div class="hero-right">
+      <img src="/Loyihalar/AkademNashr/web/img/main.png" alt="Python kitob">
+    </div>
+  </section>
 
-    <!-- How We Work Section -->
-    <section id="how-we-work" class="how-we-work">
-        <div class="container">
-            <div class="section-header animate-fade-in-up">
-                <h2>Biz qanday ishlaymiz?</h2>
-                <p class="animate-fade-in-up delay-1">Loyihani muvaffaqiyatli amalga oshirish uchun bosqichma-bosqich yondashuv</p>
-                <div class="section-divider animate-scale-in delay-2"></div>
-            </div>
-            <div class="process-timeline">
-                <div class="timeline-line"></div>
-                <div class="steps">
-                    <div class="step animate-slide-in-up">
-                        <div class="step-number-wrapper">
-                            <div class="step-number-bg"></div>
-                            <div class="step-icon">
-                                <img src="assets/images/step-1.svg" alt="1-bosqich">
-                            </div>
-                        </div>
-                        <div class="step-content">
-                            <h3>Maslahat</h3>
-                            <p>Sizning ehtiyojlaringizni aniqlaymiz va eng yaxshi yechimni taklif qilamiz. Bepul konsultatsiya va loyihani rejalashtirish.</p>
-                            <div class="step-features">
-                                <span class="feature-tag">Bepul</span>
-                                <span class="feature-tag">Tez</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step animate-slide-in-up delay-1">
-                        <div class="step-number-wrapper">
-                            <div class="step-number-bg"></div>
-                            <div class="step-icon">
-                                <img src="assets/images/step-2.svg" alt="2-bosqich">
-                            </div>
-                        </div>
-                        <div class="step-content">
-                            <h3>Ishlab chiqish</h3>
-                            <p>Loyihani professional jamoa bilan sifatli va tez amalga oshiramiz. Har bir bosqichda siz bilan muloqotda bo'lamiz.</p>
-                            <div class="step-features">
-                                <span class="feature-tag">Professional</span>
-                                <span class="feature-tag">Tez</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step animate-slide-in-up delay-2">
-                        <div class="step-number-wrapper">
-                            <div class="step-number-bg"></div>
-                            <div class="step-icon">
-                                <img src="assets/images/step-3.svg" alt="3-bosqich">
-                            </div>
-                        </div>
-                        <div class="step-content">
-                            <h3>Qo'llab-quvvatlash</h3>
-                            <p>Loyihani ishga tushirgandan keyin doimiy qo'llab-quvvatlash xizmatini taqdim etamiz. Yangilanishlar va texnik yordam.</p>
-                            <div class="step-features">
-                                <span class="feature-tag">Doimiy</span>
-                                <span class="feature-tag">Bepul</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="process-stats animate-fade-in-up delay-3">
-                <div class="stat">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Muvaffaqiyatli loyihalar</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Mijozlar qoniqishi</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Qo'llab-quvvatlash</div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- FEATURES -->
+  <section class="features" id="books">
+    <div class="line"></div>
+    <h2>Nega aynan Akademnashr?</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon"><img src="/Loyihalar/AkademNashr/web/img/feature-icon.png" alt=""></div>
+        <h4>Oson buyurtma qilish</h4>
+        <p>Akademnashr.uz saytidan o'zingizga yoqqan kitobni sodda usulda buyurtma qila olasiz.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="/Loyihalar/AkademNashr/web/img/feature-icon (2).png" alt=""></div>
+        <h4>Eng sara kitoblar</h4>
+        <p>Trenddagi eng ommabop, turli auditoriyalarga mo'ljallangan har xil janrdagi kitoblarni topa olasiz.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="/Loyihalar/AkademNashr/web/img/feature-icon (3).png" alt=""></div>
+        <h4>Tez yetkazish</h4>
+        <p>O'zbekistonning ixtiyoriy hududiga 3 ish kuni ichida, xalqaro buyurtmalarni 10 ish kuni ichida yetkazib beriladi.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Form Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info animate-fade-in-left">
-                    <div class="section-header">
-                        <h2>Biz bilan bog'laning</h2>
-                        <p>Loyihangiz haqida batafsil ma'lumot bering va biz siz bilan bog'lanamiz</p>
-                        <div class="section-divider"></div>
-                    </div>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="#1e88e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p>info@bizpro.uz</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#1e88e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Telefon</h4>
-                                <p>+998 90 123 45 67</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="#1e88e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="#1e88e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Manzil</h4>
-                                <p>Toshkent, O'zbekiston</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-benefits">
-                        <h4>Nega bizni tanlash kerak?</h4>
-                        <ul>
-                            <li>⚡ Tez va sifatli xizmat</li>
-                            <li>💰 Raqobatbardosh narxlar</li>
-                            <li>🎯 Individual yondashuv</li>
-                            <li>🔒 Maxfiylik va xavfsizlik</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper animate-fade-in-right">
-                    <form class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Ism *</label>
-                                <input type="text" id="name" name="name" required placeholder="Ismingizni kiriting">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required placeholder="email@example.com">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Telefon</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX XX XX">
-                            </div>
-                            <div class="form-group">
-                                <label for="service">Xizmat turi *</label>
-                                <select id="service" name="service" required>
-                                    <option value="">Tanlang</option>
-                                    <option value="web">Web-sayt</option>
-                                    <option value="bot">Telegram bot</option>
-                                    <option value="crm">CRM tizimi</option>
-                                    <option value="analytics">Analitika</option>
-                                    <option value="consultation">Konsultatsiya</option>
-                                    <option value="other">Boshqa</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Xabar *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Loyihangiz haqida batafsil ma'lumot bering..."></textarea>
-                        </div>
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="newsletter" checked>
-                                <span class="checkmark"></span>
-                                Yangiliklar va takliflar haqida xabar olishni xohlayman
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-large">
-                            <span>Yuborish</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- PROMO -->
+  <section class="promo" id="sale">
+    <div class="promo-left">
+      <h3>Bolalar kitoblari uchun ajoyib aksiya!</h3>
+      <p>Ertaklar, she'rlar, sarguzasht asarlar, fikrlashni o'stirish uchun turli mashq qo'llanmalari va komikslar. Aksiyadagi eng katta to'plamda 50 ta kitobni 350 ming so'mga (aslida 383 ming so'm) sotib olishingiz mumkin.</p>
+      <button class="btn">Buyurtma berish</button>
+    </div>
+    <div class="promo-right">
+      <img src="/Loyihalar/AkademNashr/web/img/section.jpg" alt="Bolalar kitoblari">
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/images/logo.svg" alt="BizPro Logo">
-                    <p>Biznesingiz uchun raqamli yechimlar</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Tezkor havolalar</h4>
-                    <ul>
-                        <li><a href="#hero">Bosh sahifa</a></li>
-                        <li><a href="#services">Xizmatlar</a></li>
-                        <li><a href="#how-we-work">Qanday ishlaymiz</a></li>
-                        <li><a href="#contact">Aloqa</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Aloqa</h4>
-                    <p>Email: info@bizpro.uz</p>
-                    <p>Tel: +998 90 123 45 67</p>
-                </div>
-                <div class="footer-social">
-                    <h4>Ijtimoiy tarmoqlar</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">
-                            <img src="assets/images/social-facebook.svg" alt="Facebook">
-                        </a>
-                        <a href="#" aria-label="Instagram">
-                            <img src="assets/images/social-instagram.svg" alt="Instagram">
-                        </a>
-                        <a href="#" aria-label="Telegram">
-                            <img src="assets/images/social-telegram.svg" alt="Telegram">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 BizPro. Barcha huquqlar himoyalangan.</p>
-            </div>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="logo">📚 Akademnashr</div>
+    <div class="footer-links">
+      <div>
+        <h4>Sahifalar</h4>
+        <a href="#home">Bosh sahifa</a>
+        <a href="#books">Kitoblar</a>
+        <a href="#sale">Aksiyalar</a>
+      </div>
+      <div>
+        <h4>Ma'lumot</h4>
+        <a href="#">Yangiliklar</a>
+        <a href="#">Kontaktlar</a>
+      </div>
+      <div>
+        <h4>Xizmatlar</h4>
+        <a href="#">Yetkazib berish</a>
+        <a href="#">To'lov</a>
+      </div>
+    </div>
+    
+  </footer>
+</div>
+
 </body>
 </html>
